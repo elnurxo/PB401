@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form HTML tags</title>
+</head>
+
+<body>
+    <h1>HTML form tags</h1>
+    <form>
+        <div class="emp-full-name">
+            <label for="full-name">Employee Full Name: </label>
+            <input id="full-name" name="fullName" type="text" placeholder="enter employee name" required minlength="2"
+                maxlength="15">
+        </div>
+        <div class="emp-salary">
+            <label for="employee-salary">Employee Salary</label>
+            <input id="employee-salary" name="salary" type="number" min="100" step="50"
+                placeholder="enter employee salary">
+        </div>
+        <div class="emp-email">
+            <label for="emp-email">Employee Email</label>
+            <input type="email" id="emp-email" name="email" autocomplete="off" placeholder="enter employee email">
+        </div>
+        <div class="emp-password">
+            <label for="emp-password">Employee Password</label>
+            <input type="password" name="password" id="emp-password" placeholder="enter employee password">
+        </div>
+        <div class="emp-number">
+            <label for="emp-number">Employee Number</label>
+            <input type="tel" placeholder="enter employee number" name="number" id="emp-number">
+        </div>
+        <div class="emp-birth-date">
+            <label for="emp-birth-date">Employee Birth date</label>
+            <input type="date" id="emp-birth-date" name="birthDate">
+        </div>
+        <div>
+            <input type="color" name="color">
+        </div>
+        <div class="accept-terms-of-use">
+            <label for="accept-terms">Accept Terms of use? </label>
+            <input id="accept-terms" type="checkbox" name="accept">
+        </div>
+        <div class="emp-gender">
+            <label for="male">Male</label>
+            <input id="male" name="gender" type="radio">
+            <label for="female">Female</label>
+            <input id="female" name="gender" type="radio">
+        </div>
+        <div>
+            <label for="credit">Credit</label>
+            <input id="credit" name="credit" type="range" min="200" max="1000">
+        </div>
+        <label for="emp-country">Employee Country</label>
+        <select required name="emp-country" id="emp-country">
+            <option value="" disabled selected>Select Country</option>
+            <option value="az">Azerbaijan</option>
+            <option value="tr">Turkey</option>
+            <option value="ru">Russia</option>
+            <option value="de">Deuthcland</option>
+            <option value="uk">Ukraine</option>
+        </select>
+        <div class="emp-cv">
+            <label for="emp-cv">Employee CV</label>
+            <input type="file" accept="image/png" name="cv" id="emp-cv">
+        </div>
+        <input type="url" placeholder="enter employee LinkedIn acc">
+
+        <hr>
+        <textarea name="" id="" cols="30" rows="15"  placeholder="enter message"></textarea>
+        <button type="submit">add</button>
+        <button type="reset">cancel</button>
+    </form>
+</body>
+
+</html>

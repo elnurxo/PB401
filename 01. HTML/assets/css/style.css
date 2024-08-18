@@ -1,0 +1,10 @@
+.outer-box ~ button {
+  background-color: red;
+}
+
+[href*="https"] {
+  color: red;
+}
+body div.outer-box + ul.fruits-list > li#apple > span {
+  color: green;
+}

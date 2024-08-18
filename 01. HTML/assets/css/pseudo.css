@@ -1,0 +1,59 @@
+/* h1::first-letter {
+  color: red;
+}
+p::first-line {
+  background-color: yellow;
+}
+li::marker {
+  color: red;
+}
+p::selection {
+  background-color: red;
+  color: black;
+}
+span {
+  cursor: pointer;
+  position: relative;
+}
+span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: black;
+  transition: 0.4s;
+}
+span:hover::after {
+  width: 100%;
+}
+button {
+  border: none;
+  padding: 12px;
+  color: white;
+  background-color: orange;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: orangered;
+  color: black;
+}
+#notifications::after{
+    content: "9";
+} */
+
+div span:only-child {
+  color: red;
+}
+input:focus {
+  outline: 2px solid red;
+  border: none;
+}
+div p:not(.content) {
+  background-color: greenyellow;
+}

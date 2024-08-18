@@ -1,0 +1,4 @@
+!, doc, html:5 - html saplon
+ctrl+k+c - comment
+ctrl+k+u - uncomment
+ctrl + /

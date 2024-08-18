@@ -1,0 +1,27 @@
+/* color name */
+/* rgb - red green blue */
+/* rgba - red green blue alpha */
+/* hex code */
+/* hsl - hue saturation lightning */
+/* hsla - hue saturation lightning alpha */
+
+h1 {
+  color: seagreen;
+  background-color: beige;
+}
+h1 + p#content {
+  color: rgb(255, 150, 0);
+}
+li:first-child {
+  /* opacity: 0.5; */
+  color: rgba(21, 223, 237, 0.8);
+}
+li:nth-child(2){
+    color: #FF69B4;
+}
+li:nth-child(3){
+    color: hsl(45, 100%, 50%);
+}
+li:nth-child(4){
+    color: hsla(252, 69%, 36%, 0.5);
+}
