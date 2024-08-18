@@ -1,0 +1,31 @@
+/* px, %, rem, em, vw, vh */
+html {
+  font-size: 30px;
+}
+#text-1 {
+  font-size: 32px;
+}
+.container {
+  width: 400px;
+  height: 300px;
+  border: 1px solid red;
+  font-size: 10px;
+}
+#text-2 {
+  /* 16px */
+  font-size: 1rem;
+}
+#text-3 {
+  /* 16px */
+  font-size: 2em;
+}
+.box {
+  width: 100%;
+  height: 300px;
+  border: 10px solid black;
+}
+.inner-box {
+  width: 50%;
+  height: 50%;
+  background-color: yellow;
+}
