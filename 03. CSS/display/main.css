@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+button {
+  padding: 12px;
+  background-color: rebeccapurple;
+  border: none;
+  border-radius: 7px;
+  color: white;
+  display: block;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.light-box {
+  width: 15%;
+  height: 200px;
+  border: 3px solid black;
+  background-color: lightgray;
+  margin: 20px auto;
+  transition: 0.3s;
+  display: none;
+}
+button:hover + .light-box {
+  background-color: yellow;
+  display: block;
+}

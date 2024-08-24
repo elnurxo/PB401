@@ -1,0 +1,11 @@
+background +
+gradient 
+filter
+box-shadow
+text css properties
+fonts
+icons
+-------
+positions
+transform
+transition

@@ -1,0 +1,19 @@
+body{
+    background-color: burlywood;
+    padding: 0;
+    margin: 0;
+}
+img{
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+h2{
+    text-align: center;
+}
+#mainDiv{
+    padding: 0 120px;
+}
+#mainDiv h4{
+    color: orange;
+}
