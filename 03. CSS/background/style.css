@@ -14,7 +14,7 @@ body {
   height: 550px;
   width: 100%;
   margin-top: 30px;
-  background-image: url("https://image.api.playstation.com/vulcan/img/rnd/202011/0714/Cu9fyu6DM41JPekXLf1neF9r.png");
+  background-image: url("https://cdn.britannica.com/54/93454-050-5AC49E5E/Spider-Man-Tobey-Maguire-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -50,17 +50,53 @@ main article h1 {
   text-decoration-thickness: 1px;
   text-decoration-style: double;
   text-decoration-line: underline; */
-  text-decoration: underline black double 1px;
+  /* text-decoration: underline black double 1px; */
   text-transform: uppercase;
   word-spacing: 20px;
   transition: 0.3s;
   cursor: pointer;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 800;
+  font-family: "THE AMAZING SPIDER-MAN", sans-serif;
+}
+h4 {
+  font-family: "Poppins";
+}
+h4 + ul {
+  margin: 20px auto;
 }
 main article p {
   text-align: justify;
+  font-weight: 300;
+  font-family: "Poppins";
   /* text-overflow: ellipsis;
   overflow: hidden;
   width: 50%;
   height: 1.2em;
   white-space: nowrap; */
 }
+#social-media-list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#social-media-list li:first-child a .fa-instagram {
+  color: purple;
+  font-size: 30px;
+}
+#social-media-list li:nth-child(2) a i {
+  color: red;
+  font-size: 30px;
+}
+#social-media-list li:nth-child(3) a i {
+  color: #2a2f35;
+  font-size: 30px;
+}
+#social-media-list li:nth-child(4) a i {
+  color: #1674ea;
+  font-size: 30px;
+}
+
