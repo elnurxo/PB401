@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  background-color: black;
+}
+.card {
+  width: 25%;
+  /* padding: 25px 15px 30px 15px; */
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 50px auto;
+}
+.card .card-top {
+  background-color: #0d8af8;
+  height: 240px;
+}
+.card .card-top .img-wrapper {
+  padding-top: 12%;
+}
+.card .card-top img {
+  width: 40%;
+  display: block;
+  margin: 0px auto;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.card .card-bottom {
+  background-color: white;
+  padding: 32px;
+  text-align: center;
+}
+.card .card-bottom h4 {
+  text-transform: uppercase;
+  color: #7c7d81;
+  font-weight: 400;
+  font-size: 20px;
+}
+.card .card-bottom a {
+  text-decoration: none;
+  color: #7c7d81;
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+}
+.social-media-wrapper {
+  display: block;
+  margin: 20px auto;
+  border: 1px solid;
+}
+#social-media {
+  list-style: none;
+  margin: 20px 0;
+  word-spacing: 32px;
+}
+#social-media li {
+  display: inline-block;
+}
+#social-media li i {
+  font-size: 22px;
+  color: #555555;
+}
+ul + p {
+  color: #7c7d81;
+  font-weight: 300;
+}
+.card-bottom .btn {
+  border-radius: 32px;
+  border: none;
+  width: 100%;
+  margin-top: 22px;
+  padding: 20px 34px;
+  background: rgb(15, 137, 246);
+  background: linear-gradient(
+    10deg,
+    rgba(15, 137, 246, 1) 0%,
+    rgba(79, 156, 226, 1) 100%
+  );
+  font-weight: 300;
+  letter-spacing: 2px;
+}
