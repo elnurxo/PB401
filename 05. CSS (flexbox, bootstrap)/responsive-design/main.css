@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 80px;
+    width: 100%;
+}
+
+@media (width <= 600px) {
+  body {
+    background-color: rgb(127, 245, 76);
+  }
+}

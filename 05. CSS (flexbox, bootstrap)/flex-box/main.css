@@ -1,0 +1,43 @@
+.wrapper {
+  border: 2px solid black;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-1 {
+  border: 4px solid red;
+  order: 2;
+}
+.box-2 {
+  border: 4px solid blue;
+  order: 4;
+}
+.box-3 {
+  border: 4px solid green;
+  order: 1;
+}
+.box-4 {
+  border: 4px solid purple;
+  order: 3;
+}
+.btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  font-family: "Times New Roman", Times, serif;
+  display: block;
+  margin: 0 auto;
+}
+.btn--danger {
+  background-color: red;
+}
