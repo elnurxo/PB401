@@ -1,0 +1,5 @@
+.header {
+    &__btn {
+        @include generate-btn($red, $red-hover);
+    }
+}

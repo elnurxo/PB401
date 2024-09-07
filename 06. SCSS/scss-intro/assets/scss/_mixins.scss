@@ -1,0 +1,106 @@
+@mixin btn($bgc, $hoverColor: black) {
+
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 7px;
+    background-color: $bgc;
+    transition: .3s linear;
+
+    &:hover {
+        background-color: $hoverColor;
+    }
+}
+
+@mixin avatar($size, $circle: false) {
+    width: $size;
+    height: $size;
+
+    @if $circle {
+        border-radius: math.div($size, 2);
+    }
+}
+
+@mixin triangle($color, $direction) {
+    height: 0;
+    width: 0;
+
+    border-color: transparent;
+    border-style: solid;
+    border: 4px solid black;
+
+    @if $direction==up {
+        border-bottom-color: $color;
+    }
+
+    @else if $direction==right {
+        border-left-color: $color;
+    }
+
+    @else if $direction==down {
+        border-top-color: $color;
+    }
+
+    @else if $direction==left {
+        border-right-color: $color;
+    }
+
+    @else {
+        @error "Unknown direction #{$direction}.";
+    }
+}
+
+.triangle {
+    @include triangle(red, "up")
+}
+
+
+@mixin breakpoint($point) {
+    @if $point==small {
+        @media (max-width: 600px) {
+            @content;
+        }
+    }
+
+    @else if $point==medium {
+        @media (max-width: 900px) {
+            @content;
+        }
+    }
+
+    @else if $point==large {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+    @else{
+        @media (min-width: 1200px) {
+            @content;
+        }
+    }
+}
+
+body{
+    background-color: red;
+    @include breakpoint(medium){
+        background-color: green;
+        
+    }
+    @include breakpoint(small){
+        background-color: cyan;
+    }
+}
+
+
+.btn-danger {
+    @include btn($danger-color);
+}
+
+
+.btn-success {
+    @include btn($hoverColor: indianred, $bgc: $success-color);
+}
+
+.btn-warning {
+    @include btn($warning-color, rgb(173, 95, 0));
+}

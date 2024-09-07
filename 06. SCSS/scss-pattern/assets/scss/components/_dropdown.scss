@@ -1,0 +1,29 @@
+.drop-down-item {
+    position: relative;
+
+    &:hover .drop-down-list {
+        visibility: visible;
+        opacity: 1;
+        top: 35px;
+    }
+}
+
+.drop-down-list {
+    transition: 0.3s;
+    position: absolute;
+    top: 55px;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 200px;
+    background-color: #fff;
+    padding: 20px;
+
+    li {
+        color: $dark;
+        line-height: 1.7rem;
+        cursor: pointer;
+        font-weight: 600;
+    }
+}

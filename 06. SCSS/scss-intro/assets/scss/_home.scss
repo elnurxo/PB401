@@ -1,0 +1,43 @@
+// $danger-color: red;
+// $success-color: green;
+// $warning-color: orange;
+// $radius: 7px;
+// $primary-padding: 12px 14px;
+
+// .btn {
+//     border: none;
+//     padding: $primary-padding;
+//     border-radius: $radius;
+//     color: white;
+// }
+
+// .btn-danger {
+//     background-color: $danger-color;
+// }
+
+// .btn-success {
+//     background-color: $success-color;
+// }
+
+// .btn-warning {
+//     background-color: $warning-color;
+// }
+
+// nesting style
+.list {
+    list-style: none;
+    border: 1px solid black;
+
+    // &==.list
+    &__item {
+        font-size: 22px;
+
+        &__link {
+            color: $success-color;
+
+            &:hover {
+                color: $danger-color;
+            }
+        }
+    }
+}

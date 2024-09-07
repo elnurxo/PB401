@@ -1,0 +1,95 @@
+/* container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 22px;
+}
+
+[class|="col"] {
+    padding: 0 16px;
+}
+
+/* columns */
+.col-1 {
+    width: calc(100% / 12 * 1);
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+}
+
+.col-12 {
+    width: calc(100% / 12 * 12);
+}
+
+// Small devices (mobile)
+@media (max-width: 575.98px) {
+    @include generate-columns('col-xs', 'xs');
+}
+
+// Medium devices (tablets)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    @include generate-columns('col-sm', 'sm');
+}
+
+// Large devices (desktops)
+@media (min-width: 768px) and (max-width: 991.98px) {
+    @include generate-columns('col-md', 'md');
+}
+
+// Extra large devices (large desktops)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    @include generate-columns('col-lg', 'lg');
+}
+
+// Extra extra large devices (larger desktops)
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    @include generate-columns('col-xl', 'xl');
+}
+
+// Extra extra extra large devices (very large desktops)
+@media (min-width: 1400px) {
+    @include generate-columns('col-xxl', 'xxl');
+}

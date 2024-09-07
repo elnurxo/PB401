@@ -1,0 +1,59 @@
+@mixin generate-columns($prefix, $breakpoint) {
+    @for $i from 1 through 12 {
+        .#{$prefix}-#{$i} {
+            width: calc(100% / 12 * #{$i});
+        }
+    }
+}
+
+@mixin breakpoint($point) {
+    @if $point == xxl {
+        @media (max-width: 1400px) {
+            @content;
+        }
+    }
+
+    @else if $point == xl {
+        @media (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @else if $point == lg {
+        @media (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $point == md {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $point == sm {
+        @media (max-width: 576px) {
+            @content;
+        }
+    }
+
+    @else if $point == xs {
+        @media (max-width: 0px) {
+            @content;
+        }
+    }
+}
+
+@mixin generate-btn($bgc, $hoverColor) {
+    background-color: $bgc;
+    border-radius: 25px;
+    border: none;
+    transition: .3s linear;
+    color: white;
+    padding: 12px 24px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $hoverColor;
+    }
+}
