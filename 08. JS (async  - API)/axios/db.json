@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "johndoe",
+      "password": "John123"
+    },
+    {
+      "id": 2,
+      "username": "adamsandler",
+      "password": "Adam123"
+    },
+    {
+      "id": 3,
+      "username": "eva1",
+      "password": "Eva123"
+    },
+    {
+      "id": "94a1",
+      "username": "elnur123",
+      "password": "Elnur123"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Twix",
+      "price": 2.2
+    },
+    {
+      "id": 2,
+      "title": "Snickers",
+      "price": 3.2
+    },
+    {
+      "id": 3,
+      "title": "Mars",
+      "price": 1.3
+    }
+  ]
+}
