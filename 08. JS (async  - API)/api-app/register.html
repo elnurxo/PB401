@@ -1,5 +1,9 @@
 <html lang="en">
 
+</html>
+
+</html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +22,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Home Page</title>
+    <title>Register Page</title>
 </head>
 
 <body>
@@ -29,27 +33,28 @@
                     alt="">
             </div>
             <ul class="d-flex nav-links align-items-center">
-                
+
             </ul>
         </div>
     </header>
 
 
     <main class="mt-5">
-        <section id="movies">
-            <div class="container">
-                <input type="text" class="form-control w-25 mb-3" id="search" placeholder="search movie by title">
-                <div class="row movies-row">
-                    <!-- loader -->
-                    <div class="justify-content-center movies-loader d-none">
-                        <div class="spinner-border " role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                    </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form id="register-form">
+                        <h3 class="lead text-center mb-4">Register Form</h3>
+                        <input id="username" type="text" class="form-control mb-2" placeholder="enter username" required>
+                        <input id="email" type="email" class="form-control mb-2" placeholder="enter email" required>
+                        <input id="profileImg" type="url" class="form-control mb-2" placeholder="enter profile picture" required>
+                        <input id="password" type="password" class="form-control mb-2" placeholder="enter password" required>
+                        <input id="confirm-password" type="password" class="form-control mb-2" placeholder="confirm password" required>
+                        <button type="submit" class="btn btn-warning d-block mx-auto w-100">Sign Up</button>
+                    </form>
                 </div>
             </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <!-- sweet alert script -->
@@ -61,6 +66,7 @@
     <!-- axios cdn -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/register.js"></script>
 </body>
 
 </html>

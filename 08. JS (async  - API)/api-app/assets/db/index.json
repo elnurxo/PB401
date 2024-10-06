@@ -80,15 +80,22 @@
       "posterSrc": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_.jpg",
       "imdb": "8.6",
       "description": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "elnurxo",
+      "email": "elnurkhalilov21@gmail.com",
+      "password": "Admin123",
+      "profileImg": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit-1240w,f_auto,q_auto:best/newscms/2019_34/2976761/190819-antonio-banderas-cs-1029a.jpg"
     },
     {
-      "id": "10",
-      "title": "The Silence of the Lambs",
-      "releaseYear": 1991,
-      "genre": "Thriller",
-      "posterSrc": "https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_.jpg",
-      "imdb": "8.6",
-      "description": "A young FBI cadet must confide in an incarcerated and manipulative killer to receive his help on catching another serial killer."
+      "id": "12c5",
+      "username": "javid123",
+      "email": "javid@gmail.com",
+      "profileImg": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Official_portrait_of_Rt_Hon_Sajid_Javid_MP_crop_2.jpg/1200px-Official_portrait_of_Rt_Hon_Sajid_Javid_MP_crop_2.jpg",
+      "password": "Javid123"
     }
   ]
 }
